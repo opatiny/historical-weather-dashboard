@@ -1,3 +1,5 @@
 # historical-weather-dashboard
 
-Store the weather data in 4 cities in an InfluxDB database and show it in interactive graphs/tables.
+Store the weather data in 4 cities in an InfluxDB database and show it in interactive graphs/tables. Show the current weather in four of these cities.
+
+This project is using Node-red
