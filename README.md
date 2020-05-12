@@ -30,7 +30,3 @@ The measurement contains fields and tags.
 
 - log data in the database every minute
 - for data >24h, keep 1 entry per hour
-
-### Database sample example
-
-<img src="./weather_db_sample.png" alt="./weather_db_sample.png" width="50%" class="center">
