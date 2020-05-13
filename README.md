@@ -1,4 +1,4 @@
-# historical-weather-dashboard
+# weather-dashboard
 
 ## Goal
 
