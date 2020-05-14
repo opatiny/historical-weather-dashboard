@@ -4,6 +4,15 @@
 
 Use **node-red** to store the weather data of 4 cities in an InfluxDB database and show it in a dashboard.
 
+## Running the project
+
+The project uses one environment variable: `OWM_ID`. It is the private user key that you get when subscribing to openweathermap. 
+
+Its value must be set when running node-red:
+```bash
+OWM_ID=<value2> node-red
+```
+
 ## Database structure
 
 Node-red package for InfluxDB: `node-red-contrib-influxdb`
