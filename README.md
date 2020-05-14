@@ -4,6 +4,10 @@
 
 Use **node-red** to store the weather data of 4 cities in an InfluxDB database and show it in a dashboard.
 
+## Run with docker
+
+Refer to the dockerized project: [https://github.com/opatiny/docker-weather-dashboard ](https://github.com/opatiny/docker-weather-dashboard).
+
 ## Running the project
 
 The project uses one environment variable: `OWM_ID`. It is the private user key that you get when subscribing to openweathermap. 
