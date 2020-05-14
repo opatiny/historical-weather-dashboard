@@ -19,11 +19,9 @@ OWM_ID=<value2> node-red
 
 ## Database structure
 
-Node-red package for InfluxDB: `node-red-contrib-influxdb`
+We create an InfluxDB database called `weather_db`. The database contains 3 measurements called `weather`, `weather_hourly` and `weather_daily`.
 
-We create an InfluxDB database called `weather_db`. The database should contain one measurement called `weather`.
-
-The measurement contains fields and tags.
+The measurements contain fields and tags.
 
 ### Fields
 
@@ -39,7 +37,10 @@ The measurement contains fields and tags.
 - `city`: Location of the measurement
 - `weather`: Weather description in a few words
 
-### Retention policies
+### Continuous queries
 
-- log data in the database every minute
-- for data >24h, keep 1 entry per hour
+3 different measurements:
+- `weather`: log data in the measurement every minute
+- `weather_hourly`: query `weather` and aggregate by hour
+- `weather_daily`: query `weather` and aggregate by day
+
